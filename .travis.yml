@@ -1,9 +1,10 @@
   language: python
   python:
-    - "3.6"
+    - "3.7"
 # command to install dependencies
+cache: pip
 install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-- python pytest --cov=.git 
+- py.test --cov=.git 
